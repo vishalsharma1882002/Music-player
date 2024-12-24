@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/120db8bba9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="card">
+        <div class="top">
+            <button><i class="fa-solid fa-arrow-left"></i></button>
+            <button><i class="fa-solid fa-bars"></i></button>
+        </div>
+        <div class="music-info">
+            <img src="Anime pc wallpaper.jpeg" alt="">
+            <h3> Dil Tu Jaan Tu</h3>
+            <p>-Arijit Singh</p>
+        </div>
+        <audio controls id="song">
+            <source src="Dil Tu Jaan Tu - Gurnazar 128 Kbps.mp3" type="audio/mpeg">
+        </audio>
+        <div class="timeline">
+            <input id="progress" type="range" value="0">
+        </div>
+        <div class="play-btns">
+            <button><i class="fa-solid fa-backward" style="color: palevioletred;"></i></button>
+            <button><i class="fa-solid fa-play" id="play" style="color: #ffffff;"></i></button>
+            <button><i class="fa-solid fa-forward" style="color: palevioletred;"></i></button>
+        </div> 
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

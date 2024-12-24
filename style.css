@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none
+}
+body{
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    margin-top: 100px;
+    background-color: black;
+}
+.card{
+    background-color: pink;
+    min-height: 400px;
+    min-width: 250px;
+    padding: 30px;
+    border-radius: 10px;
+}
+.top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.music-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 30px 0px 0px 0px;
+    align-items: center;
+}
+.music-info img{
+    height: 200px;
+    width: 200px;
+    border: 7px solid white;
+    border-radius:50%; 
+    margin-bottom: 20px;
+    object-fit: cover
+}
+.music-info h3{
+    font-size: xx-large;
+    font-weight: 100;
+    margin-bottom: 5px;
+}
+.play-btns{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.top button{
+    border: none;
+    border-radius: 50%;
+    box-shadow: 1px 2px 2px rgba(255, 26, 26, 0.22);
+
+}
+.top button i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    font-size: large;
+    cursor: pointer;
+    color: palevioletred;
+}
+.play-btns button i{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60px;
+        width: 60px;
+        font-size: large;
+        cursor: pointer;
+        color: palevioletred;
+
+}
+.play-btns button{
+    border: none;
+    border-radius: 50%;
+    box-shadow: 1px 2px 2px rgba(255, 26, 26, 0.22);
+}
+#progress{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none; 
+    width: 100%;
+    height: 6px;
+    background-color: palevioletred ;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 40px 0px;
+}
+#progress::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    background-color: #f15392;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border : 8px solid #fff;
+    box-shadow: 0 5px 5px rgba(255, 26, 26, 0.22);
+    
+}
+#play{
+    height: 80px;
+    width: 80px;
+    font-size: xx-large;
+    background-color: #f15392;
+    border-radius: 50%;
+}
+audio{
+    display: none;
+}
